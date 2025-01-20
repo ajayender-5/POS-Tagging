@@ -6,14 +6,14 @@ import pickle
 # Set page configuration to full width
 st.set_page_config(page_title="POS Tagging Application", page_icon="🏷️")
 # Load the trained model
-model = tf.keras.models.load_model('C:\\Users\\madas\\Data Science 255 - Batch\\Deep_Learning\\RNN\\pos_tagger_model.keras')
+model = tf.keras.models.load_model('C:\\Users\\ajay\\Data Science 255 - Batch\\Deep_Learning\\RNN\\pos_tagger_model.keras')
 
 # Load the word tokenizer
-with open('C:\\Users\\madas\\Data Science 255 - Batch\\Deep_Learning\\RNN\\word_tokenizer.pkl', 'rb') as f:
+with open('C:\\Users\\ajay\\Data Science 255 - Batch\\Deep_Learning\\RNN\\word_tokenizer.pkl', 'rb') as f:
     word_tokenizer = pickle.load(f)
 
 # Load the tag tokenizer
-with open('C:\\Users\\madas\\Data Science 255 - Batch\\Deep_Learning\\RNN\\tag_tokenizer.pkl', 'rb') as f:
+with open('C:\\Users\\ajay\\Data Science 255 - Batch\\Deep_Learning\\RNN\\tag_tokenizer.pkl', 'rb') as f:
     tag_tokenizer = pickle.load(f)
 
 def predict_pos(text):
